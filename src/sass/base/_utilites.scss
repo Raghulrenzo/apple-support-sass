@@ -1,0 +1,146 @@
+
+.title-xxl{
+    font-size:$fs-xxl;
+    line-height:normal;
+    color:$secondary-black;
+ }
+ .title-xl{
+     font-size:$fs-l;
+     line-height:normal;
+     color:$secondary-black;
+ }
+ .title-l{
+     font-size:$fs-xl ;
+     line-height:36px;
+     color:$primary-black;
+ }
+ .title{
+     font-size:$fs-md;
+     line-height:30px;
+     color:$primary-black;
+ }
+ .text{
+     font-size:$fs-sm;
+     line-height:26px;
+     color:$primary-black;
+ 
+ }
+/*utility-class*/
+
+/*margin-top*/
+@each $size in $spacing{
+    .mt-#{$size}
+    {
+        margin-top: $size;
+    }
+}
+/*margin-bottom*/
+@each $size in $spacing{
+    .mb-#{$size}{
+        margin-bottom: $size;
+    }
+}
+
+/*margin-right*/
+@each $size in $spacing{
+    .mr-#{$size}{
+        margin-right: $size;
+    }
+}
+.mr-md{
+    margin-right: $spacing-md;
+}
+.mr-lg{
+    margin-right:$spacing-lg;
+}
+/*margin-left*/
+@each $size in $spacing{
+    .ml-#{$size}{
+        margin-left: $size;
+    }
+}
+/*padding*/
+.pv-3{
+    padding: $spacing-3 0;   
+
+}
+.pv-lg{
+    padding:84px 0;
+}
+/* width*/
+.w-100{
+    width:100%;
+}
+/*display*/
+.d-inline-block{
+    display: inline-block;
+}
+.d-inline{
+    display: inline;
+}
+.d-block{
+    display: block;
+}
+/*text*/
+.tt-upper{
+    text-transform: uppercase;
+}
+.ta-center{
+    text-align: center;
+}
+.ta-middle{
+    vertical-align: middle;
+}
+.ta-top{
+    vertical-align: top;
+}
+.ta-bottom
+{
+    vertical-align: bottom;
+}
+.ta-left{
+    text-align: left;
+}
+.primary-black{
+    color: $primary-black;
+}
+.fs-12{
+    font-size: 12px;
+}
+/* float */
+.float-l{
+    float:left;
+}
+.float-r{
+    float:right;
+}
+/* clearfix */
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+/*position*/
+.fixed{
+    position: fixed;
+    }
+.relative{
+    position:relative;
+}    
+.absolute{
+    position:absolute;
+}
+.sticky{
+    position:sticky;
+}
+/*inline-space-reset*/
+.ln-height-0{
+    line-height:0;
+}
+.fs-0{
+    font-size:0;
+}
+/* color*/
+.secondary-grey{
+    color:$secondary-grey;
+}

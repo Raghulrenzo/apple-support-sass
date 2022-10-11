@@ -1,0 +1,38 @@
+header{
+    background-color: $primary-black;
+}
+.logo-img{
+    height:24px;
+}
+.search-icon-img,.bag-icon-img{
+    width:16px;
+}
+.navbar{
+    font-size: 0;
+}
+.navbar__items{
+    display: inline-block;
+    &--link{
+        display: inline-block;
+        position: relative;
+        padding:4px 0; 
+        &:before{
+            content:'';
+            position:absolute;
+            transition: .5s ease;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background:$primary-blue;
+        }
+        &:hover:before{
+           width:100%;
+             
+        }
+        &:hover{
+            cursor:pointer ;
+        
+        }
+    }
+}

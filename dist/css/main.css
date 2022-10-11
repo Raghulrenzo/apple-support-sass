@@ -17,6 +17,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -46,6 +47,480 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url(./font/MYRIADPRO-REGULAR.woff) format("woff");
+  font-display: swap;
+  font-weight: 400;
+}
+.title-xxl {
+  font-size: 64px;
+  line-height: normal;
+  color: #414141;
+}
+
+.title-xl {
+  font-size: 24px;
+  line-height: normal;
+  color: #414141;
+}
+
+.title-l {
+  font-size: 32px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+}
+
+/*utility-class*/
+/*margin-top*/
+.mt-8px {
+  margin-top: 8px;
+}
+
+.mt-16px {
+  margin-top: 16px;
+}
+
+.mt-24px {
+  margin-top: 24px;
+}
+
+.mt-32px {
+  margin-top: 32px;
+}
+
+.mt-40px {
+  margin-top: 40px;
+}
+
+.mt-48px {
+  margin-top: 48px;
+}
+
+.mt-56px {
+  margin-top: 56px;
+}
+
+.mt-64px {
+  margin-top: 64px;
+}
+
+/*margin-bottom*/
+.mb-8px {
+  margin-bottom: 8px;
+}
+
+.mb-16px {
+  margin-bottom: 16px;
+}
+
+.mb-24px {
+  margin-bottom: 24px;
+}
+
+.mb-32px {
+  margin-bottom: 32px;
+}
+
+.mb-40px {
+  margin-bottom: 40px;
+}
+
+.mb-48px {
+  margin-bottom: 48px;
+}
+
+.mb-56px {
+  margin-bottom: 56px;
+}
+
+.mb-64px {
+  margin-bottom: 64px;
+}
+
+/*margin-right*/
+.mr-8px {
+  margin-right: 8px;
+}
+
+.mr-16px {
+  margin-right: 16px;
+}
+
+.mr-24px {
+  margin-right: 24px;
+}
+
+.mr-32px {
+  margin-right: 32px;
+}
+
+.mr-40px {
+  margin-right: 40px;
+}
+
+.mr-48px {
+  margin-right: 48px;
+}
+
+.mr-56px {
+  margin-right: 56px;
+}
+
+.mr-64px {
+  margin-right: 64px;
+}
+
+.mr-md {
+  margin-right: 90px;
+}
+
+.mr-lg {
+  margin-right: 150px;
+}
+
+/*margin-left*/
+.ml-8px {
+  margin-left: 8px;
+}
+
+.ml-16px {
+  margin-left: 16px;
+}
+
+.ml-24px {
+  margin-left: 24px;
+}
+
+.ml-32px {
+  margin-left: 32px;
+}
+
+.ml-40px {
+  margin-left: 40px;
+}
+
+.ml-48px {
+  margin-left: 48px;
+}
+
+.ml-56px {
+  margin-left: 56px;
+}
+
+.ml-64px {
+  margin-left: 64px;
+}
+
+/*padding*/
+.pv-3 {
+  padding: 24px 0;
+}
+
+.pv-lg {
+  padding: 84px 0;
+}
+
+/* width*/
+.w-100 {
+  width: 100%;
+}
+
+/*display*/
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-block {
+  display: block;
+}
+
+/*text*/
+.tt-upper {
+  text-transform: uppercase;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-middle {
+  vertical-align: middle;
+}
+
+.ta-top {
+  vertical-align: top;
+}
+
+.ta-bottom {
+  vertical-align: bottom;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.primary-black {
+  color: #333333;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+/* float */
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*position*/
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: sticky;
+}
+
+/*inline-space-reset*/
+.ln-height-0 {
+  line-height: 0;
+}
+
+.fs-0 {
+  font-size: 0;
+}
+
+/* color*/
+.secondary-grey {
+  color: #9b9b9b;
+}
+
+.link-primary {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.link-secondary {
+  font-size: 18px;
+  color: #4a90e2;
+  line-height: 26px;
+}
+
+.link-teritary {
+  font-size: 12px;
+  color: #666666;
+  line-height: 20px;
+}
+
+.link-sm {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 970px;
+  width: calc(100% - 360px);
+  padding: 0 20px;
+  margin: auto;
+}
+
+header {
+  background-color: #333333;
+}
+
+.logo-img {
+  height: 24px;
+}
+
+.search-icon-img, .bag-icon-img {
+  width: 16px;
+}
+
+.navbar {
+  font-size: 0;
+}
+
+.navbar__items {
+  display: inline-block;
+}
+.navbar__items--link {
+  display: inline-block;
+  position: relative;
+  padding: 4px 0;
+}
+.navbar__items--link:before {
+  content: "";
+  position: absolute;
+  transition: 0.5s ease;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #4a90e2;
+}
+.navbar__items--link:hover:before {
+  width: 100%;
+}
+.navbar__items--link:hover {
+  cursor: pointer;
+}
+
+.footer__link ul li:nth-of-type(1) {
+  color: #333333;
+}
+
+body {
+  font-family: "MyriadPro", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/*trypography*/
+/*components*/
+.add-more-icon {
+  border-radius: 50%;
+  border: 2px #4a90e2 solid;
+  width: 14px;
+  height: 14px;
+  color: #4a90e2;
+  padding: 0 4px;
+}
+
+/*hero-section*/
+.hero-section {
+  background-image: url("https://i.ibb.co/0Xv6R4w/apple-support.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* products */
+.apple-product figure {
+  display: inline-block;
+}
+.apple-product__watch--img {
+  height: 156px;
+}
+.apple-product__iphone--img {
+  height: 166px;
+}
+.apple-product__ipad--img {
+  height: 168px;
+}
+.apple-product__mac--img {
+  height: 142px;
+}
+.apple-product__tv--img {
+  height: 132px;
+}
+.apple-product__itune--img {
+  height: 118px;
+}
+
+.col-3 {
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  height: 230px;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.border {
+  border: 1px #cccccc solid;
+  border-right: 0;
+  border-left: 0;
+}
+
+.apple-tracking__img {
+  height: 187px;
+  width: 280px;
+}
+.apple-tracking__title {
+  width: 410px;
+}
+
+.apple-support__img {
+  width: 162px;
+  height: 152px;
+}
+
+.contact__card {
+  width: 560px;
+}
+.contact__card--img {
+  width: 244px;
+  height: 60px;
+}
+
+.order__card {
+  width: 266px;
+  position: relative;
+}
+.order__card--img {
+  width: 72px;
+  height: 72px;
+}
+.order__card::after {
+  content: "";
+  width: 270px;
+  position: absolute;
+  height: 1px;
+  background-color: #666666;
+  transform: rotate(-90deg);
+  top: 130px;
+  left: -160px;
 }
 
 /*# sourceMappingURL=main.css.map */
