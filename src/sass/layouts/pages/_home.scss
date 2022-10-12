@@ -1,0 +1,109 @@
+body{
+    font-family:'MyriadPro', Helvetica, sans-serif;
+    font-weight:400;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style:none;
+}
+img{
+    width:100%;
+    height:100%;
+}
+/*hero-section*/
+.hero-section{
+    background-image: url("https://i.ibb.co/0Xv6R4w/apple-support.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*components*/
+
+.add-more-icon{
+    border-radius: 50%;
+    border: 2px $primary-blue solid;
+    width:14px;
+    height:14px;
+    color:$primary-blue;
+    padding:0 4px;
+}
+/*apple-product*/
+.apple-product{
+    figure{
+        display: inline-block;
+    }
+    &__watch--img{
+    height:156px;
+    }  
+    &__iphone--img{
+    height: 166px;
+    }
+    &__ipad--img{
+    height: 168px;
+    }
+    &__mac--img{
+    height:142px;
+    }
+    &__tv--img{
+    height: 132px;
+    }
+    &__itune--img{
+    height: 118px;
+    }
+}    
+.col-3{
+    width:calc((100% - 300px)/3);
+    display: inline-block;
+    text-align: center;
+    height: 230px;
+}
+/*feature-section*/
+.apple-support__img{
+    width:162px;
+    height:152px;
+}
+.apple-tracking{
+    &__img{
+    height:187px;
+    width:280px;
+    }
+    &__title{
+    width:410px;
+    }
+}
+
+/*program-section*/
+.program-links{
+    a{
+        line-height: 32px;
+    }
+}
+/*contact*/
+.contact__card{
+    width:560px;
+    &--img{
+        width:244px;
+        height:60px;
+    }
+}
+.order__card{
+    width:266px;
+    position: relative;
+    &--img{
+        width:72px;
+        height:72px;
+    }
+    &::after{
+        content:'';
+        width:270px;
+        position:absolute;
+        height:1px;
+        background-color: $primary-grey;
+        transform: rotate(-90deg);
+        top:130px;
+        left:-160px;
+    }
+}

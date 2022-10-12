@@ -49,6 +49,9 @@ table {
   border-spacing: 0;
 }
 
+/*colors*/
+/*spacing-size*/
+/*font-size*/
 @font-face {
   font-family: "MyriadPro";
   src: url(./font/MYRIADPRO-REGULAR.woff) format("woff");
@@ -286,6 +289,10 @@ table {
   font-size: 12px;
 }
 
+.ln-32 {
+  line-height: 32px;
+}
+
 /* float */
 .float-l {
   float: left;
@@ -331,6 +338,18 @@ table {
 /* color*/
 .secondary-grey {
   color: #9b9b9b;
+}
+
+/* two-colomun*/
+.col-2 {
+  width: 50%;
+}
+
+/*border-line*/
+.border {
+  border: 1px #cccccc solid;
+  border-right: 0;
+  border-left: 0;
 }
 
 .link-primary {
@@ -402,10 +421,6 @@ header {
   cursor: pointer;
 }
 
-.footer__link ul li:nth-of-type(1) {
-  color: #333333;
-}
-
 body {
   font-family: "MyriadPro", Helvetica, sans-serif;
   font-weight: 400;
@@ -424,7 +439,14 @@ img {
   height: 100%;
 }
 
-/*trypography*/
+/*hero-section*/
+.hero-section {
+  background-image: url("https://i.ibb.co/0Xv6R4w/apple-support.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*components*/
 .add-more-icon {
   border-radius: 50%;
@@ -435,15 +457,7 @@ img {
   padding: 0 4px;
 }
 
-/*hero-section*/
-.hero-section {
-  background-image: url("https://i.ibb.co/0Xv6R4w/apple-support.jpg");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* products */
+/*apple-product*/
 .apple-product figure {
   display: inline-block;
 }
@@ -467,20 +481,16 @@ img {
 }
 
 .col-3 {
-  width: 200px;
+  width: calc((100% - 300px) / 3);
   display: inline-block;
   text-align: center;
   height: 230px;
 }
 
-.col-2 {
-  width: 50%;
-}
-
-.border {
-  border: 1px #cccccc solid;
-  border-right: 0;
-  border-left: 0;
+/*feature-section*/
+.apple-support__img {
+  width: 162px;
+  height: 152px;
 }
 
 .apple-tracking__img {
@@ -491,11 +501,12 @@ img {
   width: 410px;
 }
 
-.apple-support__img {
-  width: 162px;
-  height: 152px;
+/*program-section*/
+.program-links a {
+  line-height: 32px;
 }
 
+/*contact*/
 .contact__card {
   width: 560px;
 }
@@ -521,6 +532,10 @@ img {
   transform: rotate(-90deg);
   top: 130px;
   left: -160px;
+}
+
+.footer__link ul li:nth-of-type(1) {
+  color: #333333;
 }
 
 /*# sourceMappingURL=main.css.map */

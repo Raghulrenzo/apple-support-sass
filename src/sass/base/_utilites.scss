@@ -1,30 +1,4 @@
 
-.title-xxl{
-    font-size:$fs-xxl;
-    line-height:normal;
-    color:$secondary-black;
- }
- .title-xl{
-     font-size:$fs-l;
-     line-height:normal;
-     color:$secondary-black;
- }
- .title-l{
-     font-size:$fs-xl ;
-     line-height:36px;
-     color:$primary-black;
- }
- .title{
-     font-size:$fs-md;
-     line-height:30px;
-     color:$primary-black;
- }
- .text{
-     font-size:$fs-sm;
-     line-height:26px;
-     color:$primary-black;
- 
- }
 /*utility-class*/
 
 /*margin-top*/
@@ -61,7 +35,7 @@
 }
 /*padding*/
 .pv-3{
-    padding: $spacing-3 0;   
+    padding: 24px 0;   
 
 }
 .pv-lg{
@@ -107,6 +81,9 @@
 .fs-12{
     font-size: 12px;
 }
+.ln-32{
+    line-height:32px;
+}
 /* float */
 .float-l{
     float:left;
@@ -143,4 +120,14 @@
 /* color*/
 .secondary-grey{
     color:$secondary-grey;
+}
+/* two-colomun*/
+.col-2{
+    width:calc(100% / 2);
+}
+/*border-line*/
+.border{
+    border:1px $primary-pink solid;
+    border-right:0;
+    border-left:0;
 }
