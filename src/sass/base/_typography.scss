@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'MyriadPro';
     src: url(./font/MYRIADPRO-REGULAR.woff) format('woff');
@@ -10,7 +11,11 @@
     font-size:$fs-xxl;
     line-height:normal;
     color:$secondary-black;
+    @include media-breakpoint(lg){
+        font-size:$fs-xl;
+    }
  }
+ 
  .title-xl{
      font-size:$fs-l;
      line-height:normal;

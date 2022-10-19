@@ -1,6 +1,11 @@
 .container{
     max-width: 970px;
-    width:calc(100% - 360px);
     padding: 0 20px ;
     margin:auto;
+    @include media-breakpoint(lg){
+        max-width:800px;
+    }
+    @include media-breakpoint(md){
+        padding:0 30px;
+    }
 }

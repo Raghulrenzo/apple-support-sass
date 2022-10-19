@@ -1,7 +1,19 @@
 .footer__link{
     ul{
+        @include media-breakpoint(lg){
+            width:48%;
+            margin-right: $spacing-1;
+            margin-bottom: $spacing-2;
+        }
         li:nth-of-type(1){
         color:$primary-black;
     }
+    }
+    p{
+        a{
+            .link-secondary{
+                font-size: 12px;
+            }
+        }
     }
 }

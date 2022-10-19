@@ -52,6 +52,7 @@ table {
 /*colors*/
 /*spacing-size*/
 /*font-size*/
+/*breakpoints*/
 @font-face {
   font-family: "MyriadPro";
   src: url(./font/MYRIADPRO-REGULAR.woff) format("woff");
@@ -62,6 +63,11 @@ table {
   font-size: 64px;
   line-height: normal;
   color: #414141;
+}
+@media only screen and (max-width: 992px) {
+  .title-xxl {
+    font-size: 32px;
+  }
 }
 
 .title-xl {
@@ -90,102 +96,107 @@ table {
 
 /*utility-class*/
 /*margin-top*/
-.mt-8px {
+.mt-1 {
   margin-top: 8px;
 }
 
-.mt-16px {
+.mt-2 {
   margin-top: 16px;
 }
 
-.mt-24px {
+.mt-3 {
   margin-top: 24px;
 }
 
-.mt-32px {
+.mt-4 {
   margin-top: 32px;
 }
 
-.mt-40px {
+.mt-5 {
   margin-top: 40px;
 }
 
-.mt-48px {
+.mt-6 {
   margin-top: 48px;
 }
 
-.mt-56px {
+.mt-7 {
   margin-top: 56px;
 }
 
-.mt-64px {
+.mt-8 {
   margin-top: 64px;
 }
 
 /*margin-bottom*/
-.mb-8px {
+.mb-1 {
   margin-bottom: 8px;
 }
 
-.mb-16px {
+.mb-2 {
   margin-bottom: 16px;
 }
 
-.mb-24px {
+.mb-3 {
   margin-bottom: 24px;
 }
 
-.mb-32px {
+.mb-4 {
   margin-bottom: 32px;
 }
 
-.mb-40px {
+.mb-5 {
   margin-bottom: 40px;
 }
 
-.mb-48px {
+.mb-6 {
   margin-bottom: 48px;
 }
 
-.mb-56px {
+.mb-7 {
   margin-bottom: 56px;
 }
 
-.mb-64px {
+.mb-8 {
   margin-bottom: 64px;
 }
 
 /*margin-right*/
-.mr-8px {
+.mr-1 {
   margin-right: 8px;
 }
 
-.mr-16px {
+.mr-2 {
   margin-right: 16px;
 }
 
-.mr-24px {
+.mr-3 {
   margin-right: 24px;
 }
 
-.mr-32px {
+.mr-4 {
   margin-right: 32px;
 }
 
-.mr-40px {
+.mr-5 {
   margin-right: 40px;
 }
 
-.mr-48px {
+.mr-6 {
   margin-right: 48px;
 }
 
-.mr-56px {
+.mr-7 {
   margin-right: 56px;
 }
 
-.mr-64px {
+.mr-8 {
   margin-right: 64px;
+}
+@media only screen and (max-width: 992px) {
+  .mr-8 {
+    margin-right: 40px;
+  }
 }
 
 .mr-md {
@@ -197,36 +208,44 @@ table {
 }
 
 /*margin-left*/
-.ml-8px {
+.ml-1 {
   margin-left: 8px;
 }
 
-.ml-16px {
+.ml-2 {
   margin-left: 16px;
 }
 
-.ml-24px {
+.ml-3 {
   margin-left: 24px;
 }
 
-.ml-32px {
+.ml-4 {
   margin-left: 32px;
 }
 
-.ml-40px {
+.ml-5 {
   margin-left: 40px;
 }
 
-.ml-48px {
+.ml-6 {
   margin-left: 48px;
 }
 
-.ml-56px {
+.ml-7 {
   margin-left: 56px;
 }
 
-.ml-64px {
+.ml-8 {
   margin-left: 64px;
+}
+
+.mr-md {
+  margin-right: 90px;
+}
+
+.mr-lg {
+  margin-right: 150px;
 }
 
 /*padding*/
@@ -344,12 +363,22 @@ table {
 .col-2 {
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .col-2 {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
 
 /*border-line*/
 .border {
   border: 1px #cccccc solid;
   border-right: 0;
   border-left: 0;
+}
+
+.primary-blue {
+  color: #4a90e2;
 }
 
 .link-primary {
@@ -375,9 +404,18 @@ table {
 
 .container {
   max-width: 970px;
-  width: calc(100% - 360px);
   padding: 0 20px;
   margin: auto;
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
 }
 
 header {
@@ -395,9 +433,37 @@ header {
 .navbar {
   font-size: 0;
 }
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    background-color: #333333;
+    top: 74px;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    z-index: 2;
+    display: block;
+    margin-bottom: 15px;
+    transition: 1s;
+    transform: translateX(100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .display {
+    transform: translateX(0);
+  }
+}
 
 .navbar__items {
   display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .navbar__items {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
 }
 .navbar__items--link {
   display: inline-block;
@@ -419,6 +485,23 @@ header {
 }
 .navbar__items--link:hover {
   cursor: pointer;
+}
+
+.arrow {
+  width: 30px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .arrow {
+    display: block;
+  }
+}
+
+.line {
+  width: 30px;
+  height: 6px;
+  background-color: #FFF;
+  margin-bottom: 4px;
 }
 
 body {
@@ -458,6 +541,9 @@ img {
 }
 
 /*apple-product*/
+.apple-product a {
+  display: inline-block;
+}
 .apple-product figure {
   display: inline-block;
 }
@@ -486,11 +572,33 @@ img {
   text-align: center;
   height: 230px;
 }
+@media only screen and (max-width: 992px) {
+  .col-3 {
+    width: 48%;
+    margin-right: 8px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .col-3 {
+    width: 100%;
+  }
+}
 
 /*feature-section*/
-.apple-support__img {
-  width: 162px;
-  height: 152px;
+@media screen and (max-width: 768px) {
+  .apple-tracking {
+    text-align: left;
+  }
+  .apple-tracking__img {
+    width: 162px;
+    height: 152px;
+  }
+  .apple-tracking__title {
+    width: 80%;
+  }
+  .apple-tracking__text {
+    width: 80%;
+  }
 }
 
 .apple-tracking__img {
@@ -498,7 +606,19 @@ img {
   width: 280px;
 }
 .apple-tracking__title {
-  width: 410px;
+  width: 92%;
+}
+
+@media screen and (max-width: 768px) {
+  .apple-application {
+    text-align: left;
+  }
+  .apple-application__title {
+    text-align: left;
+  }
+  .apple-application__text {
+    width: 80%;
+  }
 }
 
 /*program-section*/
@@ -510,14 +630,36 @@ img {
 .contact__card {
   width: 560px;
 }
+@media only screen and (max-width: 992px) {
+  .contact__card {
+    width: 60%;
+  }
+}
 .contact__card--img {
   width: 244px;
   height: 60px;
+}
+@media screen and (max-width: 768px) {
+  .contact__card {
+    display: block;
+    width: 100%;
+    margin-bottom: 48px;
+  }
 }
 
 .order__card {
   width: 266px;
   position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .order__card {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .order__card {
+    width: 100%;
+  }
 }
 .order__card--img {
   width: 72px;
@@ -533,9 +675,24 @@ img {
   top: 130px;
   left: -160px;
 }
+@media screen and (max-width: 768px) {
+  .order__card::after {
+    display: none;
+  }
+}
 
+@media only screen and (max-width: 992px) {
+  .footer__link ul {
+    width: 48%;
+    margin-right: 8px;
+    margin-bottom: 16px;
+  }
+}
 .footer__link ul li:nth-of-type(1) {
   color: #333333;
+}
+.footer__link p a .link-secondary {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */

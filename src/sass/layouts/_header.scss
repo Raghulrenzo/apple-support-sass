@@ -9,9 +9,36 @@ header{
 }
 .navbar{
     font-size: 0;
+    @include media-breakpoint(md){
+        
+            position:fixed;
+            background-color: $primary-black;
+            top:74px;
+            right:0;
+            width:60%;
+            height:100vh;
+            z-index:2;
+            display: block;
+            margin-bottom: 15px;
+            transition: 1s; 
+            transform: translateX(100%);  
+            
+            
+    }
+    
+}
+.display{
+    @include media-breakpoint(md){
+        transform: translateX(0);
+    }
 }
 .navbar__items{
     display: inline-block;
+    @include media-breakpoint(md){
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
     &--link{
         display: inline-block;
         position: relative;
@@ -35,4 +62,19 @@ header{
         
         }
     }
+    
+}
+.arrow{
+    width:30px;
+    display: none;
+    @include media-breakpoint(md){
+        display: block;
+
+    }
+}
+.line{
+    width:30px;
+    height:6px;
+    background-color: #FFF;
+    margin-bottom: 4px;
 }

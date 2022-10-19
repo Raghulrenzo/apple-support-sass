@@ -32,6 +32,9 @@ img{
 }
 /*apple-product*/
 .apple-product{
+    a{
+        display: inline-block;
+    }
     figure{
         display: inline-block;
     }
@@ -59,19 +62,50 @@ img{
     display: inline-block;
     text-align: center;
     height: 230px;
+    @include media-breakpoint(lg){
+        width:48%;
+        margin-right:$spacing-1;
+        
+    }
+    @include media-breakpoint(sm){
+        width:100%;
+    }
 }
 /*feature-section*/
-.apple-support__img{
-    width:162px;
-    height:152px;
+.apple-tracking{
+    @include media-breakpoint(md){
+    text-align: left;
+    &__img{
+        width:162px;
+        height:152px;
+    }
+    &__title{
+        width:80%;
+    }
+    &__text{
+        width:80%;
+    }
 }
+}
+
 .apple-tracking{
     &__img{
     height:187px;
     width:280px;
     }
     &__title{
-    width:410px;
+    width:92%;
+    }
+}
+.apple-application{
+    @include media-breakpoint(md) {
+    text-align: left;
+    &__title{
+    text-align: left;
+    }
+    &__text{
+        width:80%;
+    }
     }
 }
 
@@ -84,13 +118,27 @@ img{
 /*contact*/
 .contact__card{
     width:560px;
+    @include media-breakpoint(lg){
+        width:60%;
+    }
     &--img{
         width:244px;
         height:60px;
     }
+    @include media-breakpoint(md){
+        display: block;
+        width:100%;
+        margin-bottom: $spacing-6;
+    }
 }
 .order__card{
     width:266px;
+    @include media-breakpoint(lg){
+        width:30%;
+    }
+    @include media-breakpoint(md){
+        width:100%;
+    }
     position: relative;
     &--img{
         width:72px;
@@ -105,5 +153,11 @@ img{
         transform: rotate(-90deg);
         top:130px;
         left:-160px;
+        @include media-breakpoint(md){
+            display: none;
+        }
     }
 }
+
+    
+   

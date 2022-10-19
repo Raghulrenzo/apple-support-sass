@@ -7,6 +7,16 @@ $primary-grey:#666666;
 $secondary-grey:#9b9b9b;
 $primary-pink:#cccccc;
 /*spacing-size*/
+$spacing-1:8px;
+$spacing-2:16px;
+$spacing-3:24px;
+$spacing-4:32px;
+$spacing-5:40px;
+$spacing-6:48px;
+$spacing-7:56px;
+$spacing-8:64px;
+$spacing-md:90px;
+$spacing-lg:150px;
 $spacing-md:90px;
 $spacing-lg:150px;
 $spacing: 8px,16px,24px,32px,40px,48px,56px,64px;
@@ -16,3 +26,10 @@ $fs-xl:32px;
 $fs-l:24px;
 $fs-md:20px;
 $fs-sm:18px;
+/*breakpoints*/
+$breakpoints-xxl:1400px;
+$breakpoints-xl:1200px;
+$breakpoints-lg:992px;
+$breakpoints-md:768px;
+$breakpoints-sm:576px;
+ 
