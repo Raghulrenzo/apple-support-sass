@@ -128,6 +128,14 @@ table {
   margin-top: 64px;
 }
 
+.mt-md {
+  margin-top: 90px;
+}
+
+.mt-lg {
+  margin-top: 150px;
+}
+
 /*margin-bottom*/
 .mb-1 {
   margin-bottom: 8px;
@@ -159,6 +167,14 @@ table {
 
 .mb-8 {
   margin-bottom: 64px;
+}
+
+.mb-md {
+  margin-bottom: 90px;
+}
+
+.mb-lg {
+  margin-bottom: 150px;
 }
 
 /*margin-right*/
@@ -193,11 +209,6 @@ table {
 .mr-8 {
   margin-right: 64px;
 }
-@media only screen and (max-width: 992px) {
-  .mr-8 {
-    margin-right: 40px;
-  }
-}
 
 .mr-md {
   margin-right: 90px;
@@ -205,6 +216,15 @@ table {
 
 .mr-lg {
   margin-right: 150px;
+}
+
+.mr-8 {
+  margin-right: 64px;
+}
+@media only screen and (max-width: 992px) {
+  .mr-8 {
+    margin-right: 40px;
+  }
 }
 
 /*margin-left*/
@@ -240,12 +260,12 @@ table {
   margin-left: 64px;
 }
 
-.mr-md {
-  margin-right: 90px;
+.ml-md {
+  margin-left: 90px;
 }
 
-.mr-lg {
-  margin-right: 150px;
+.ml-lg {
+  margin-left: 150px;
 }
 
 /*padding*/
@@ -420,6 +440,9 @@ table {
 
 header {
   background-color: #333333;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 .logo-img {
@@ -469,6 +492,7 @@ header {
   display: inline-block;
   position: relative;
   padding: 4px 0;
+  margin-bottom: 16px;
 }
 .navbar__items--link:before {
   content: "";

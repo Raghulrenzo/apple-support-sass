@@ -17,9 +17,7 @@ $spacing-7:56px;
 $spacing-8:64px;
 $spacing-md:90px;
 $spacing-lg:150px;
-$spacing-md:90px;
-$spacing-lg:150px;
-$spacing: 8px,16px,24px,32px,40px,48px,56px,64px;
+$spacing:("1":8px,"2":16px,"3":24px,"4":32px,"5":40px,"6":48px,"7":56px,"8":64px,"md":90px,"lg":150px);
 /*font-size*/
 $fs-xxl:64px;
 $fs-xl:32px;

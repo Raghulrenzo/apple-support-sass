@@ -1,123 +1,37 @@
 
 /*utility-class*/
-
 /*margin-top*/
-.mt-1{
-    margin-top:$spacing-1;
-}
-.mt-2{
-    margin-top:$spacing-2;
-}
-.mt-3{
-    margin-top:$spacing-3;
-}
-.mt-4{
-    margin-top:$spacing-4;
-}
-.mt-5{
-    margin-top:$spacing-5;
-}
-.mt-6{
-    margin-top:$spacing-6;
-}
-.mt-7{
-    margin-top:$spacing-7;
-}
-.mt-8{
-    margin-top:$spacing-8;
+@each $num,$size in $spacing{
+    .mt-#{$num}{
+        margin-top:$size;
+    }
 }
 /*margin-bottom*/
-.mb-1{
-    margin-bottom:$spacing-1;
-}
-.mb-2{
-    margin-bottom:$spacing-2;
-}
-.mb-3{
-    margin-bottom:$spacing-3;
-}
-.mb-4{
-    margin-bottom:$spacing-4;
-}
-.mb-5{
-    margin-bottom:$spacing-5;
-}
-.mb-6{
-    margin-bottom:$spacing-6;
-}
-.mb-7{
-    margin-bottom:$spacing-7;
-}
-.mb-8{
-    margin-bottom:$spacing-8;
+@each $num,$size in $spacing{
+    .mb-#{$num}{
+        margin-bottom:$size;
+    }
 }
 /*margin-right*/
-.mr-1{
-    margin-right:$spacing-1;
+@each $num,$size in $spacing{
+    .mr-#{$num}{
+        margin-right:$size;
+    }
 }
-.mr-2{
-    margin-right:$spacing-2;
-}
-.mr-3{
-    margin-right:$spacing-3;
-}
-.mr-4{
-    margin-right:$spacing-4;
-}
-.mr-5{
-    margin-right:$spacing-5;
-}
-.mr-6{
-    margin-right:$spacing-6;
-}
-.mr-7{
-    margin-right:$spacing-7;
-}
+
 .mr-8{
     margin-right:$spacing-8;
     @include media-breakpoint(lg){
         margin-right:$spacing-5;
     }
 }
-.mr-md{
-    margin-right: $spacing-md;
-}
-.mr-lg{
-    margin-right:$spacing-lg;
-}
 /*margin-left*/
-.ml-1{
-    margin-left:$spacing-1;
-}
-.ml-2{
-    margin-left:$spacing-2;
-}
-.ml-3{
-    margin-left:$spacing-3;
-}
-.ml-4{
-    margin-left:$spacing-4;
-}
-.ml-5{
-    margin-left:$spacing-5;
-}
-.ml-6{
-    margin-left:$spacing-6;
-}
-.ml-7{
-    margin-left:$spacing-7;
-}
-.ml-8{
-    margin-left:$spacing-8;
-}
-.mr-md{
-    margin-right: $spacing-md;
-}
-.mr-lg{
-    margin-right:$spacing-lg;
-}
-
-
+@each $num,$size in $spacing{
+    .ml-#{$num}{
+        margin-left:$size;
+    }
+} 
+ 
 
 /*padding*/
 .pv-3{

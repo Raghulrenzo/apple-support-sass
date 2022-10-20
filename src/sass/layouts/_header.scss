@@ -1,5 +1,8 @@
 header{
     background-color: $primary-black;
+    position: sticky;
+    top:0;
+    z-index: 3;
 }
 .logo-img{
     height:24px;
@@ -42,7 +45,8 @@ header{
     &--link{
         display: inline-block;
         position: relative;
-        padding:4px 0; 
+        padding:4px 0;
+        margin-bottom: $spacing-2; 
         &:before{
             content:'';
             position:absolute;
