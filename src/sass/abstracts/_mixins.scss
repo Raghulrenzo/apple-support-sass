@@ -26,3 +26,11 @@
         };
     }
 }
+
+@mixin circle($width:30px,$height:36px) {
+    width:$width;
+    height:$height;
+    background-color: red;
+    border-radius: 50%;
+
+}
